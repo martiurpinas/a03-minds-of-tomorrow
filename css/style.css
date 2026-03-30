@@ -42,7 +42,7 @@ footer {
 
 /* Background Image for Header */
 header {
-    background: url('images/banner-1.jpg') no-repeat center center/cover;
+    background: url('./images/banner-2.jpg');
     height: 50vh;
     display: flex;
     align-items: center;
@@ -71,22 +71,30 @@ header {
     transform: scale(1.05);
 }
 
-/* Styles for the new sections */
+/* Updated styles for the new sections */
 
 /* Section: Innovative programs */
 .programs {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 2rem 0;
-    background-color: #a8f0e0;
+    background-color: #a8f0e0; /* Light green background */
     padding: 2rem;
     border-radius: 10px;
 }
 
 .program {
-    text-align: center;
     flex: 1;
     margin: 0 1rem;
+    text-align: center;
+}
+
+.program:nth-child(2), .program:nth-child(3) {
+    align-self: flex-end; /* Align second and third photos to the right */
+}
+
+.program:nth-child(4) {
+    align-self: flex-start; /* Align fourth photo to the left */
 }
 
 .program img {
