@@ -122,9 +122,9 @@ header {
 }
 
 /* Footer */
-.soporte {
+.text-content {
     text-align: center;
-    background-color: #007bff;
+    background-color: #5798dc;
     color: rgb(0, 0, 0);
     padding: 1rem;
     margin-top: 2rem;
