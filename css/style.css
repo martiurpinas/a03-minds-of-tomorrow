@@ -12,8 +12,7 @@ background-color: #f4f4f4;
 color: #333;
 }
 
-/* Header */
-
+/* Ajuste del header para la imagen de fondo y el texto */
 header {
 background: url('./images/banner-2.jpg');
 height: 50vh;
@@ -26,7 +25,6 @@ width: 100%;
 }
 
 /* Main */
-
 main {
 padding: 0;
 }
@@ -48,15 +46,13 @@ p {
 margin-bottom: 1rem;
 }
 
-/* Layout Flex Sections */
-
+/* Sección de */
 section[style*="display: flex"] {
 padding: 2rem 4rem;
 background: white;
 }
 
 /* Gallery */
-
 .gallery {
 display: flex;
 justify-content: center;
@@ -75,8 +71,7 @@ transition: transform 0.3s ease;
 transform: scale(1.05);
 }
 
-/* Sección Verde */
-
+/* Sección */
 .lista {
 background-color: #a8f0e0;
 padding: 2rem 4rem 1rem 4rem;
@@ -112,7 +107,6 @@ font-weight: bold;
 }
 
 /* Sección Azul */
-
 .text-content {
 text-align: center;
 background-color: #5798dc;
@@ -122,7 +116,6 @@ width: 100%;
 }
 
 /* Footer Negro */
-
 footer {
 background: #000;
 color: #fff;
@@ -131,8 +124,7 @@ padding: 1rem 0;
 width: 100%;
 }
 
-/* Responsive */
-
+/* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
 
 section[style*="display: flex"] {
