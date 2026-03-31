@@ -1,10 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif; /* Updated font to resemble the style in the image */
     margin: 0;
     padding: 0;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+}
+
+.updock-regular {
+  font-family: "Updock", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Header */
@@ -26,6 +32,9 @@ section {
 
 h2 {
     color: #444;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 /* Footer */
