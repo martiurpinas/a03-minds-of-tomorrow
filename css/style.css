@@ -1,144 +1,152 @@
-body {
-    font-family: 'Raleway', sans-serif; /* Updated font to resemble the style in the image */
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+/* Reset básico */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
-.updock-regular {
-  font-family: "Updock", cursive;
-  font-weight: 400;
-  font-style: normal;
+body {
+font-family: 'Raleway', sans-serif;
+line-height: 1.6;
+background-color: #f4f4f4;
+color: #333;
 }
 
 /* Header */
+
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+background: url('./images/banner-2.jpg');
+height: 50vh;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+width: 100%;
 }
 
-/* Main Content */
+/* Main */
+
 main {
-    padding: 2rem;
+padding: 0;
 }
 
 section {
-    margin-bottom: 2rem;
+width: 100%;
 }
+
+/* Tipografía */
 
 h2 {
-    color: #444;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
+color: #444;
+font-weight: 700;
+letter-spacing: 1px;
+margin-bottom: 1rem;
 }
 
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+p {
+margin-bottom: 1rem;
 }
 
-/* Imagen de fondo para el encabezado */
-header {
-    background: url('./images/banner-2.jpg');
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+/* Layout Flex Sections */
+
+section[style*="display: flex"] {
+padding: 2rem 4rem;
+background: white;
 }
 
-/* Gallery Styles */
+/* Gallery */
+
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    padding: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+width: 100%;
+max-width: 350px;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
 }
 
 .gallery img:hover {
-    transform: scale(1.05);
+transform: scale(1.05);
 }
 
-/* Sección de las imagenes de los programas */
+/* Sección Verde */
+
+.lista {
+background-color: #a8f0e0;
+padding: 2rem 4rem 1rem 4rem;
+}
+
+.lista h2 {
+margin: 0;
+}
+
 .programs {
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem 0;
-    background-color: #a8f0e0;
-    padding: 2rem;
-    border-radius: 10px;
+display: flex;
+justify-content: space-between;
+background-color: #a8f0e0;
+padding: 2rem 4rem;
+width: 100%;
 }
 
 .program {
-    flex: 1;
-    margin: 0 1rem;
-    text-align: center;
-}
-
-.program:nth-child(2), .program:nth-child(3) {
-    align-self: flex-end;
-}
-
-.program:nth-child(4) {
-    align-self: flex-start;
+flex: 1;
+text-align: center;
 }
 
 .program img {
-    width: 100%;
-    max-width: 150px;
-    border-radius: 10px;
+width: 100%;
+max-width: 150px;
+border-radius: 10px;
 }
 
 .program p {
-    margin-top: 0.5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
+margin-bottom: 1rem;
+font-size: 1.2rem;
+font-weight: bold;
 }
 
-/* Selección de estudio, imagen de estudio */
-.gallery {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0;
-}
+/* Sección Azul */
 
-.gallery img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 10px;
-}
-
-/* Footer */
 .text-content {
-    text-align: center;
-    background-color: #5798dc;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    padding: 1rem;
-    margin-top: 2rem;
-    border-radius: 10px;
+text-align: center;
+background-color: #5798dc;
+color: black;
+padding: 2rem 4rem;
+width: 100%;
 }
 
-.soporte p {
-    margin: 0.5rem 0;
+/* Footer Negro */
+
+footer {
+background: #000;
+color: #fff;
+text-align: center;
+padding: 1rem 0;
+width: 100%;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+section[style*="display: flex"] {
+flex-direction: column;
+padding: 2rem;
+}
+
+.programs {
+flex-direction: column;
+gap: 2rem;
+}
+
+.program {
+margin: 0;
+}
+
 }
