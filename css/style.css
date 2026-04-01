@@ -13,7 +13,7 @@ color: #333;
 }
 
 
-/* HEADER — Imagen principal */
+/* Ajuestes de la imagen principal, el texto y el encabezado */
 header {
 background-image: url('../images/banner-2.jpg');
 background-size: cover;
@@ -68,7 +68,6 @@ margin-bottom: 1rem;
 
 
 /* GALERÍA */
-
 .gallery {
 display: flex;
 justify-content: center;
@@ -147,7 +146,7 @@ width: 100%;
 }
 
 
-/* Media queries: para dispositivos moviles */
+/* Media Queries: para dispositivos moviles */
 @media (max-width: 768px) {
 
 section[style*="display: flex"] {
