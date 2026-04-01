@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset */
 * {
 margin: 0;
 padding: 0;
@@ -12,19 +12,34 @@ background-color: #f4f4f4;
 color: #333;
 }
 
-/* Ajuste del header para la imagen de fondo y el texto */
+
+/* HEADER — Imagen principal */
 header {
-background: url('./images/banner-2.jpg');
-height: 50vh;
+background-image: url('../images/banner-2.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+height: 60vh;
+width: 100%;
+
 display: flex;
 align-items: center;
 justify-content: center;
-color: #fff;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-width: 100%;
+
+color: white;
+text-align: center;
+
+text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 }
 
-/* Main */
+header h1 {
+font-size: 2.5rem;
+font-weight: 600;
+}
+
+
+/* MAIN */
 main {
 padding: 0;
 }
@@ -33,12 +48,17 @@ section {
 width: 100%;
 }
 
-/* Tipografía */
 
+/* Secciones con contenido blanco */
+section[style*="display: flex"] {
+background: white;
+padding: 3rem 4rem;
+}
+
+
+/* Texto */
 h2 {
 color: #444;
-font-weight: 700;
-letter-spacing: 1px;
 margin-bottom: 1rem;
 }
 
@@ -46,13 +66,9 @@ p {
 margin-bottom: 1rem;
 }
 
-/* Sección de */
-section[style*="display: flex"] {
-padding: 2rem 4rem;
-background: white;
-}
 
-/* Gallery */
+/* GALERÍA */
+
 .gallery {
 display: flex;
 justify-content: center;
@@ -62,31 +78,32 @@ align-items: center;
 .gallery img {
 width: 100%;
 max-width: 350px;
-border-radius: 8px;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-transition: transform 0.3s ease;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+transition: 0.3s;
 }
 
 .gallery img:hover {
 transform: scale(1.05);
 }
 
-/* Sección */
+
+/* SECCIÓN VERDE */
 .lista {
-background-color: #a8f0e0;
+background-color: #34d1a1;
 padding: 2rem 4rem 1rem 4rem;
+color: white;
 }
 
 .lista h2 {
-margin: 0;
+color: white;
 }
 
 .programs {
+background-color: #34d1a1;
 display: flex;
 justify-content: space-between;
-background-color: #a8f0e0;
 padding: 2rem 4rem;
-width: 100%;
 }
 
 .program {
@@ -101,30 +118,36 @@ border-radius: 10px;
 }
 
 .program p {
-margin-bottom: 1rem;
-font-size: 1.2rem;
 font-weight: bold;
+margin-bottom: 1rem;
+color: white;
 }
 
-/* Sección Azul */
+
+/* SECCIÓN AZUL */
 .text-content {
-text-align: center;
 background-color: #5798dc;
-color: black;
 padding: 2rem 4rem;
-width: 100%;
-}
-
-/* Footer Negro */
-footer {
-background: #000;
-color: #fff;
 text-align: center;
-padding: 1rem 0;
+color: white;
+}
+
+.text-content h2 {
+color: white;
+}
+
+
+/* FOOTER DE COLOR NEGRO */
+footer {
+background: black;
+color: white;
+text-align: center;
+padding: 1rem;
 width: 100%;
 }
 
-/* Media queries para dispositivos móviles */
+
+/* Media queries: para dispositivos moviles */
 @media (max-width: 768px) {
 
 section[style*="display: flex"] {
@@ -137,8 +160,8 @@ flex-direction: column;
 gap: 2rem;
 }
 
-.program {
-margin: 0;
+header h1 {
+font-size: 2rem;
 }
 
 }
