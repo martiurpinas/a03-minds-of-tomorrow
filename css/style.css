@@ -12,7 +12,6 @@ background-color: #f4f4f4;
 color: #333;
 }
 
-
 /* Ajuestes de la imagen principal, el texto y el encabezado */
 header {
 background-image: url('../images/banner-2.jpg');
@@ -38,7 +37,6 @@ font-size: 2.5rem;
 font-weight: 600;
 }
 
-
 /* MAIN */
 main {
 padding: 0;
@@ -48,15 +46,13 @@ section {
 width: 100%;
 }
 
-
 /* Secciones con contenido blanco */
 section[style*="display: flex"] {
 background: white;
 padding: 3rem 4rem;
 }
 
-
-/* Texto */
+/* Títulos para cada una de las secciones */
 h2 {
 color: #444;
 margin-bottom: 1rem;
@@ -66,8 +62,7 @@ p {
 margin-bottom: 1rem;
 }
 
-
-/* GALERÍA */
+/* Sección de galería para la imagen de la cuarta sección */
 .gallery {
 display: flex;
 justify-content: center;
@@ -85,7 +80,6 @@ transition: 0.3s;
 .gallery img:hover {
 transform: scale(1.05);
 }
-
 
 /* SECCIÓN VERDE */
 .lista {
@@ -122,7 +116,6 @@ margin-bottom: 1rem;
 color: white;
 }
 
-
 /* SECCIÓN AZUL */
 .text-content {
 background-color: #5798dc;
@@ -135,7 +128,6 @@ color: white;
 color: white;
 }
 
-
 /* FOOTER DE COLOR NEGRO */
 footer {
 background: black;
@@ -144,7 +136,6 @@ text-align: center;
 padding: 1rem;
 width: 100%;
 }
-
 
 /* Media Queries: para dispositivos moviles */
 @media (max-width: 768px) {
