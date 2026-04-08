@@ -197,7 +197,7 @@ footer {
     }
 }
 
-/* Media queries media queries (responsive) para diferentes pantallas */
+/* Ajustes de las media queries (responsive) para la visualización de las direntestes pantallas */
 @media (max-width: 550px) {
     .programs {
         gap: 1rem;
