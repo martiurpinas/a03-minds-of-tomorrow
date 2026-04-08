@@ -226,7 +226,7 @@ footer {
     }
 }
 
-/* Ajuste de las Media queries (responsive) para el landscape en móviles */
+/* Ajustes de las Media queries (responsive) para el landscape en móviles */
 @media (max-width: 480px) and (orientation: landscape) {
     .program {
         flex: 0 1 calc(33% - 0.8rem);
