@@ -33,7 +33,6 @@ header h1 {
     font-weight: 600;
 }
 
-/* MAIN */
 main {
     padding: 0;
 }
@@ -71,7 +70,7 @@ p {
     margin-bottom: 1rem;
 }
 
-/* Galería */
+/* Ajustes de la primera sección de la pagina */
 .gallery {
     display: flex;
     justify-content: center;
@@ -106,7 +105,7 @@ p {
     margin-bottom: 0.5rem;
 }
 
-/* Contenedor de los 4 programas - diseño HORIZONTAL por defecto (escritorio) */
+/* Ajustes del contenedor de los 4 programas, asignaturas, etc */
 .programs {
     background-color: #34d1a1;
     display: flex;
@@ -156,7 +155,7 @@ p {
     font-weight: normal;
 }
 
-/* SECCIÓN AZUL */
+/* Ajustes del texto, color de fondo, etc; de la sección final de la pagina */
 .text-content {
     background-color: #5798dc;
     padding: 2rem 4rem;
@@ -168,7 +167,7 @@ p {
     color: white;
 }
 
-/* FOOTER */
+/* Ajustes del footer */
 footer {
     background: black;
     color: white;
@@ -177,10 +176,8 @@ footer {
     width: 100%;
 }
 
-/* =========================================== */
-/* RESPONSIVE: diseño como en la foto de la derecha (2 columnas en horizontal, no vertical) */
-/* =========================================== */
 
+/* Media queries (responsive) para los dispositivos moviles */
 @media (max-width: 900px) {
     .programs {
         flex-direction: row;
@@ -189,7 +186,7 @@ footer {
         padding: 2rem 1.5rem;
     }
 
-    /* DOS columnas (como la foto de la derecha) */
+    /* Ajustes de las media queries (responsive) para separar las imagenes en 2 columnas separadas, 2 imagenes arriba y 2 abajo */
     .program {
         flex: 0 1 calc(50% - 1.5rem);
         min-width: 180px;
@@ -201,7 +198,7 @@ footer {
     }
 }
 
-/* Pantallas pequeñas (menos de 550px) - seguimos con 2 columnas, no apilado vertical */
+/* Media queries media queries (responsive) para diferentes pantallas */
 @media (max-width: 550px) {
     .programs {
         gap: 1rem;
@@ -230,7 +227,7 @@ footer {
     }
 }
 
-/* Ajuste para landscape en móviles */
+/* Ajuste de las Media queries (responsive) para el landscape en móviles */
 @media (max-width: 480px) and (orientation: landscape) {
     .program {
         flex: 0 1 calc(33% - 0.8rem);
