@@ -1,157 +1,238 @@
 /* Reset */
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-font-family: 'Raleway', sans-serif;
-line-height: 1.6;
-background-color: #f4f4f4;
-color: #333;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Ajuestes de la imagen principal, el texto y el encabezado */
+/* Ajustes de la imagen principal, el texto y el encabezado */
 header {
-background-image: url('../images/banner-2.jpg');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-
-height: 60vh;
-width: 100%;
-
-display: flex;
-align-items: center;
-justify-content: center;
-
-color: white;
-text-align: center;
-
-text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    background-image: url('../images/banner-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 }
 
 header h1 {
-font-size: 2.5rem;
-font-weight: 600;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 /* MAIN */
 main {
-padding: 0;
+    padding: 0;
 }
 
 section {
-width: 100%;
+    width: 100%;
 }
 
-/* Secciones con contenido blanco */
-section[style*="display: flex"] {
-background: white;
-padding: 3rem 4rem;
+/* Sección blanca con dos columnas */
+.white-flex-section {
+    background: white;
+    padding: 3rem 4rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Títulos para cada una de las secciones */
+.text-column {
+    flex: 1;
+}
+
+.gallery-column {
+    flex: 1;
+}
+
+/* Títulos */
 h2 {
-color: #444;
-margin-bottom: 1rem;
+    color: #444;
+    margin-bottom: 1rem;
 }
 
 p {
-margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
-/* Sección de galería para la imagen de la cuarta sección */
+/* Galería */
 .gallery {
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery img {
-width: 100%;
-max-width: 350px;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-transition: 0.3s;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
 .gallery img:hover {
-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /* SECCIÓN VERDE */
 .lista {
-background-color: #34d1a1;
-padding: 2rem 4rem 1rem 4rem;
-color: white;
+    background-color: #34d1a1;
+    padding: 2rem 4rem 1rem 4rem;
+    color: white;
 }
 
 .lista h2 {
-color: white;
+    color: white;
 }
 
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Contenedor de los 4 programas - diseño HORIZONTAL por defecto (escritorio) */
 .programs {
-background-color: #34d1a1;
-display: flex;
-justify-content: space-between;
-padding: 2rem 4rem;
+    background-color: #34d1a1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 2rem 4rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .program {
-flex: 1;
-text-align: center;
+    flex: 1;
+    min-width: 160px;
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.program:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.2);
 }
 
 .program img {
-width: 100%;
-max-width: 150px;
-border-radius: 10px;
+    width: 100%;
+    max-width: 150px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    object-fit: cover;
 }
 
 .program p {
-font-weight: bold;
-margin-bottom: 1rem;
-color: white;
+    font-weight: bold;
+    margin: 0.8rem 0 0.2rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.program-desc {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    color: #f9f9f9;
+    font-weight: normal;
 }
 
 /* SECCIÓN AZUL */
 .text-content {
-background-color: #5798dc;
-padding: 2rem 4rem;
-text-align: center;
-color: white;
+    background-color: #5798dc;
+    padding: 2rem 4rem;
+    text-align: center;
+    color: white;
 }
 
 .text-content h2 {
-color: white;
+    color: white;
 }
 
-/* FOOTER DE COLOR NEGRO */
+/* FOOTER */
 footer {
-background: black;
-color: white;
-text-align: center;
-padding: 1rem;
-width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
 }
 
-/* Media Queries: para dispositivos moviles */
-@media (max-width: 768px) {
+/* =========================================== */
+/* RESPONSIVE: diseño como en la foto de la derecha (2 columnas en horizontal, no vertical) */
+/* =========================================== */
 
-section[style*="display: flex"] {
-flex-direction: column;
-padding: 2rem;
+@media (max-width: 900px) {
+    .programs {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    /* DOS columnas (como la foto de la derecha) */
+    .program {
+        flex: 0 1 calc(50% - 1.5rem);
+        min-width: 180px;
+    }
+
+    .white-flex-section {
+        padding: 2rem 1.5rem;
+        flex-direction: column;
+    }
 }
 
-.programs {
-flex-direction: column;
-gap: 2rem;
+/* Pantallas pequeñas (menos de 550px) - seguimos con 2 columnas, no apilado vertical */
+@media (max-width: 550px) {
+    .programs {
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .program {
+        flex: 0 1 calc(50% - 1rem);
+        min-width: 140px;
+    }
+    
+    .program img {
+        max-width: 120px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .lista {
+        padding: 1.5rem 1rem 0.5rem 1rem;
+    }
+    
+    .text-content {
+        padding: 1.5rem;
+    }
 }
 
-header h1 {
-font-size: 2rem;
-}
-
+/* Ajuste para landscape en móviles */
+@media (max-width: 480px) and (orientation: landscape) {
+    .program {
+        flex: 0 1 calc(33% - 0.8rem);
+    }
 }
